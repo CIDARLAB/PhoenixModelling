@@ -1,0 +1,391 @@
+{
+    "header":{
+        "author":[
+            "Prashant Vaidyanathan",
+            "Nicholas A DeLateur",
+            "Curtis Madsen"
+        ],
+        "description":"bioCPS UCF for Phoenix."
+    },
+    "parts":[
+		{
+			"id":"pLacIq018",
+			"sequence":"TAACT",
+			"part":"promoter",
+			"type":"constitutive",
+		},
+		{
+			"id":"pLacI017",
+			"sequence":"GATACA",
+			"part":"promoter",
+			"type":"constitutive",
+		},
+		{
+			"id":"pLas007",
+			"sequence":"CTTCTCA",
+			"part":"promoter",
+			"type":"activated-induced",
+		},
+		{
+			"id":"pLas030",
+			"sequence":"CTTCTCA",
+			"part":"promoter",
+			"type":"activated-induced",
+		},
+		{
+			"id":"pLux050",
+			"sequence":"TAGCGAA",
+			"part":"promoter",
+			"type":"activated-induced",
+		},
+		{
+			"id":"pLux078",
+			"sequence":"TAGCGAA",
+			"part":"promoter",
+			"type":"activated-induced",
+		},
+		{
+			"id":"pRhl046",
+			"sequence":"TGGTAGGTCCT",
+			"part":"promoter",
+			"type":"activated-induced",
+		},
+		{
+			"id":"pPhl081",
+			"sequence":"ACCTCTAC",
+			"part":"promoter",
+			"type":"repressed",
+		},
+		{
+			"id":"pOR1093",
+			"sequence":"CGGGC",
+			"part":"promoter",
+			"type":"repressed",
+		},
+		{
+			"id":"RBS30",
+			"part":"rbs",
+			"sequence":"GTATATCTCGA"
+		}, 
+		{
+			"id":"RBS31",
+			"part":"rbs",
+			"sequence":"CCTGGTAG"
+		},
+		{
+			"id":"RBS32",
+			"part":"rbs",
+			"sequence":"AAACAGTAAGG"
+		},
+		{
+			"id":"RBS33",
+			"part":"rbs",
+			"sequence":"TACCCATT"
+		},
+		{
+            		"id":"GFP",
+            		"k_loss":0.00443383612441,
+            		"part":"cds",
+            		"type":"reporter",
+	    		"sequence":"CTCAAGCG"
+        	},
+		{
+            		"id":"LasR",
+            		"k_loss":0.00443383612441,
+            		"part":"cds",
+            		"type":"connector",
+	    		"sequence":"TCTCG"
+        	},
+		{
+            		"id":"LuxR",
+            		"k_loss":0.00443383612441,
+            		"part":"cds",
+            		"type":"connector",
+	 	   	"sequence":"AGATT"
+        	},
+ 	    {
+            		"id":"RhlR",
+            		"k_loss":0.00443383612441,
+            		"part":"cds",
+            		"type":"connector",
+	 	   	"sequence":"AGATT"
+        	},
+        {
+            		"id":"PhlF",
+            		"k_loss":0.00443383612441,
+            		"part":"cds",
+            		"type":"connector",
+	 	   	"sequence":"AGATT"
+        	},
+        {
+            		"id":"cI",
+            		"k_loss":0.00443383612441,
+            		"part":"cds",
+            		"type":"connector",
+	 	   	"sequence":"AGATT"
+        	},
+		{
+            		"id":"Ter1",
+            		"part":"terminator",
+	    		"sequence":"AACATCA"
+        	},
+		{
+            		"id":"lasAHL",
+            		"part":"smallMolecule",
+            		"min":0,
+            		"max":1000
+        	},
+        	{
+            		"id":"luxAHL",
+            		"part":"smallMolecule",
+            		"min":0,
+            		"max":1000
+        	},
+        	{
+            		"id":"rhlAHL",
+            		"part":"smallMolecule",
+            		"min":0,
+            		"max":10000
+        	},
+	],
+	"composite-parts" : [
+		{
+			"id":"pLacIq018_RBS30",
+			"type":"promoter-rbs",
+			"parts":[
+				"pLacIq018",
+				"RBS30"
+			], 
+			"k_express":12.880496
+		},
+		{
+			"id":"pLacIq018_RBS31",
+			"type":"promoter-rbs",
+			"parts":[
+				"pLacIq018",
+				"RBS31"
+			], 
+			"k_express":2.287800
+		},
+		{
+			"id":"pLacIq018_RBS32",
+			"type":"promoter-rbs",
+			"parts":[
+				"pLacIq018",
+				"RBS32"
+			],  
+			"k_express":0.114374
+		},
+		{
+			"id":"pLacIq018_RBS33",
+			"type":"promoter-rbs",
+			"parts":[
+				"pLacIq018",
+				"RBS33"
+			],  
+			"k_express":0.080882
+		},
+		{
+			"id":"pLacI017_RBS30",
+			"type":"promoter-rbs",
+			"parts":[
+				"pLacI017",
+				"RBS30"
+			],  
+			"k_express":244.383905
+		},
+		{
+			"id":"pLacI017_RBS31",
+			"type":"promoter-rbs",
+			"parts":[
+				"pLacI017",
+				"RBS31"
+			],  
+			"k_express":69.969313
+		},
+		{
+			"id":"pLacI017_RBS32",
+			"type":"promoter-rbs",
+			"parts":[
+				"pLacI017",
+				"RBS32"
+			],  
+			"k_express":0.396657
+		},
+		{
+			"id":"pLacI017_RBS33",
+			"type":"promoter-rbs",
+			"parts":[
+				"pLacI017",
+				"RBS33"
+			],  
+			"k_express":0.120943
+		},
+		{
+			"id":"pPhl081_RBS30",
+			"type":"promoter-rbs",
+			"parts":[
+				"pPhl081",
+				"RBS30"
+			], 
+			"basal": 0.898,
+        		"max": 8.513,
+        		"K_d": 8.624,
+        		"n": 1.149
+		},
+		{
+			"id":"pOR1093_RBS30",
+			"type":"promoter-rbs",
+			"parts":[
+				"pOR1093",
+				"RBS30"
+			], 
+			"basal": 0.218,
+        		"max": 1.087,
+        		"K_d": 1.11,
+        		"n": 0.536
+		},
+		{
+			"id":"pLas007_RBS30",
+			"type":"promoter-rbs",
+			"parts":[
+				"pLas007",
+				"RBS30"
+			], 
+			"basal": 0.880809684,
+        		"max": 15.6531967,
+        		"K_d": 10199.3374,
+        		"n": 1.71885728,
+        		"max_TF": 75.9762782,
+        		"K_d_TF": 1.83137522,
+        		"n_TF": 895.850096,
+        		"K_d_SM": 92.8182299,
+        		"n_SM": 0.776443122
+		},
+		{
+			"id":"pLas030_RBS30",
+			"type":"promoter-rbs",
+			"parts":[
+				"pLas030",
+				"RBS30"
+			], 
+			"basal": 0.424896427,
+        		"max": 0.791365713,
+        		"K_d": 9687.28118,
+        		"n": 0.790786849,
+        		"max_TF": 127.060929,
+        		"K_d_TF": 1.70896690,
+        		"n_TF": 120.367964,
+        		"K_d_SM": 104.428299,
+        		"n_SM": 0.733802666
+		},
+		{
+			"id":"pLux050_RBS30",
+			"type":"promoter-rbs",
+			"parts":[
+				"pLux050",
+				"RBS30"
+			], 
+			"basal": 1.80951336,
+        		"max": 4.62189340,
+        		"K_d": 4023.22017,
+        		"n": 1.89042783,
+        		"max_TF": 76.6575351,
+        		"K_d_TF": 1.42754651,
+        		"n_TF": 622.358665,
+        		"K_d_SM": 257.012950,
+        		"n_SM": 0.879642834
+		},
+		{
+			"id":"pLux078_RBS32",
+			"type":"promoter-rbs",
+			"parts":[
+				"pLux078",
+				"RBS32"
+			], 
+			"basal": 0.424896427,
+        		"max": 0.791365713,
+        		"K_d": 9687.28118,
+        		"n": 0.790786849,
+        		"max_TF": 127.060929,
+        		"K_d_TF": 1.70896690,
+        		"n_TF": 120.367964,
+        		"K_d_SM": 104.428299,
+        		"n_SM": 0.733802666
+		},
+		{
+			"id":"pRhl046_RBS31",
+			"type":"promoter-rbs",
+			"parts":[
+				"pRhl046",
+				"RBS31"
+			], 
+			"basal": 2.52734707,
+        		"max": 1.55789934,
+        		"K_d": 862.809479,
+        		"n": 0.940226509,
+        		"max_TF": 370260.028,
+        		"K_d_TF": 2.66658835,
+        		"n_TF": 209.984146,
+        		"K_d_SM": 0.0000792387903,
+        		"n_SM": 0.420848569
+		}		
+	],
+    "modules" : [
+        {
+            "parts" : [
+                "pPhl081_RBS30",
+                "PhlF"
+            ], 
+            "interaction" : "repression"
+        },
+        {
+            "parts" : [
+                "pOR1093_RBS30",
+                "cI"
+            ], 
+            "interaction" : "repression"
+        },
+        {
+            "parts" : [
+                "pLas007_RBS30",
+                "LasR",
+		"lasAHL"
+            ], 
+            "interaction" : "activation"
+        },
+        {
+            "parts" : [
+                "pLas030_RBS30",
+                "LasR",
+		"lasAHL"
+            ], 
+            "interaction" : "activation"
+        },
+        {
+            "parts" : [
+                "pLux050_RBS30",
+                "LuxR",
+		"luxAHL"
+            ], 
+            "interaction" : "activation"
+        },
+        {
+            "parts" : [
+                "pLux078_RBS32",
+                "LuxR",
+		"luxAHL"
+            ], 
+            "interaction" : "activation"
+        },
+        {
+            "parts" : [
+                "pRhl046_RBS31",
+                "RhlR",
+		"rhlAHL"
+            ], 
+            "interaction" : "activation"
+        }
+        
+    ]
+}

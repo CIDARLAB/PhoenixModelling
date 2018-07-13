@@ -1,0 +1,1 @@
+The flow cytometer was fucked up which the beads let me realize. Long story short, the correct/official beads for all the post-fixing we did is BeadsAK02_001, B2. 
